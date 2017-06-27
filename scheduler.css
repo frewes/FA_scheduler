@@ -1,0 +1,121 @@
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    -webkit-animation: fadeEffect 0.25s;
+    animation: fadeEffect 0.25s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.session{
+    display:inline-table;
+    padding: 10px;
+}
+
+.session th{
+    padding:8px;
+}
+
+.session td{
+    padding: 8px;
+    text-align: center;
+}
+
+.indiv{
+    display:inline-table;
+    padding: 4px;
+    
+}
+
+.indiv th{
+    padding:4px;
+    border: solid #CCCCCC 1px;
+}
+
+.indiv td{
+    padding: 2px;
+    text-align: center;
+    border: solid #CCCCCC 1px;
+    
+}
+
+.indiv td:nth-child(6n+0) {background-color: #f2f2f2}
+.indiv td:nth-child(6n+1) {background-color: #f2f2f2}
+.indiv td:nth-child(6n+2) {background-color: #f2f2f2}
+
+.session td:nth-child(1) {background-color: #f2f2f2}
+.session td:nth-child(2) {background-color: #f2f2f2}
+.session th {background-color: #f2f2f2}
+
+tr:hover td {
+    background-color: #c5c5c5 !important
+}
+
+
+
+table.roundtable{
+     display: inline-block;
+}
+
+.roundtable td {
+    padding-right: 20px;
+}
+
+.title {
+    text-align:center;
+    font-size: 4em;
+    align-content: center;
+}
+
+.title input {
+    text-align: center;
+}
